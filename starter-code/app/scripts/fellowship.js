@@ -99,6 +99,9 @@ makeBuddies();
 
 function beautifulStranger() {
   // change the 'Strider' textnode to 'Aragorn'
+  var aragornSwitch = document.querySelectorAll('buddies')[3];
+  aragornSwitch.textContent = "Aragorn";
+
 }
 
 
