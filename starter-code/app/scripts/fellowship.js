@@ -68,7 +68,7 @@ function keepItSecretKeepItSafe() {
   // give the div a class of 'magic-imbued-jewelry'
   ring.className = "magic-imbued-jewelry";
   // add an event listener so that when a user clicks on the ring, the nazgulScreech function (provided) is invoked
-  ring.addEventListener('cllck', nazgulScreech);
+  ring.addEventListener('click', nazgulScreech);
   // add the ring as a child of Frodo
   frodo.appendChild('div#ring');
 }
@@ -79,11 +79,21 @@ keepItSecretKeepItSafe();
 
 function makeBuddies() {
   // create an aside tag
+  var buddyAside = document.createElement('aside');
   // attach an unordered list of the 'buddies' in the aside
+  var buddyList = document.createElement('ul');
+  for (var i = 0; i < buddies.length; i++) {
+    var content = document.createElement('li');
+  buddyList.textContent = buddies[i];
+  buddyList.appendChild(buddyList);
+  }
   // insert your aside as a child element of rivendell
+  aside.appendChild('buddyList');
+  rivendell.appendChild('aside');
+
 }
 
-
+makeBuddies();
 // Part 5
 
 
